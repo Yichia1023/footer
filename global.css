@@ -1,0 +1,176 @@
+@charset "UTF-8";
+/* 最常用的綠500 */
+/* 最常用的紅500 */
+/* 第二常用其他綠 */
+/* 灰色不確定大家用的多不多 */
+/* 常用字體 */
+body {
+  font-family: "Noto Sans";
+}
+
+.h1 {
+  font-size: 52px;
+  font-family: Noto Sans;
+  font-weight: 700;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.h2 {
+  font-size: 42px;
+  font-family: Noto Sans;
+  font-weight: 600;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.h3 {
+  font-size: 36px;
+  font-family: Noto Sans;
+  font-weight: 500;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.h4 {
+  font-size: 32px;
+  font-family: Noto Sans;
+  font-weight: 500;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.h5 {
+  font-size: 24px;
+  font-family: Noto Sans;
+  font-weight: 500;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.h6 {
+  font-size: 20px;
+  font-family: Noto Sans;
+  font-weight: 500;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.p {
+  font-size: 16px;
+  font-family: Noto Sans;
+  line-height: 24px;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.ps {
+  /* 註解 */
+  font-size: 14px;
+  font-family: Noto Sans;
+  font-weight: 400;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.h1-L {
+  font-size: 64px;
+  font-family: Libre Bodoni;
+  font-style: italic;
+  font-weight: 700;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.h2-L {
+  font-size: 52px;
+  font-family: Libre Bodoni;
+  font-style: italic;
+  font-weight: 700;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.h3-L {
+  font-size: 48px;
+  font-family: Libre Bodoni;
+  font-style: italic;
+  font-weight: 600;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.btn-primary {
+  padding: 10px 50px;
+  border-radius: 3px;
+  border: black solid 1px;
+  background-color: black;
+  color: white;
+}
+.btn-primary:hover {
+  border: black solid 1px;
+  background-color: white;
+  color: black;
+  transition: ease 0.5s;
+}
+
+.btn-sencondary {
+  padding: 10px 50px;
+  border-radius: 3px;
+  border: black solid 1px;
+  background-color: white;
+  color: black;
+  box-sizing: content-box;
+}
+.btn-sencondary:hover {
+  box-shadow: inset 0 0 0 1px black;
+  transition: ease 0.5s;
+}
+
+.btn-danger {
+  background-color: #963827;
+  color: #fff;
+  padding: 10px 50px;
+  border-radius: 3px;
+  border: #963827 solid 1px;
+}
+.btn-danger:hover {
+  opacity: 0.7;
+  transition: ease 0.5s;
+}
+
+.btn-success {
+  background-color: #90957a;
+  color: #fff;
+  padding: 10px 50px;
+  border-radius: 3px;
+  border: #90957a solid 1px;
+}
+.btn-success:hover {
+  opacity: 0.7;
+  transition: ease 0.5s;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border-radius: 3px;
+  color: white;
+  border: white solid 1px;
+  padding: 10px 50px;
+}
+.btn-outline:hover {
+  box-shadow: inset 0 0 0 1px white;
+  transition: ease 0.5s;
+}
+
+.btn-logout {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 3px;
+  color: #626553;
+  border: white solid 1px;
+  padding: 10px 50px;
+}
+.btn-logout:hover {
+  opacity: 0.7;
+  transition: ease 0.5s;
+}/*# sourceMappingURL=global.css.map */
