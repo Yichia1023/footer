@@ -11,14 +11,14 @@ body {
 
 section {
   background-color: pink;
-  height: 1000px;
+  height: 500px;
 }
 
 .footer-one {
   background-color: $gray-100;
-  padding-block: 120px;
+  padding: 120px 240px;
+  justify-content: space-between;
   display: flex;
-  justify-content: space-around;
   .footer-logo-name {
     color: $green-500;
     font-size: 64px;
@@ -27,26 +27,26 @@ section {
     margin-bottom: 34px;
   }
   .footer-icon {
-    font-size: 22px;
+    font-size: 28px;
     color: $green-500;
     i {
       margin-right: 10px;
       padding: 7px 5px;
       border-radius: 50%;
-      border: 1.5px solid $green-500;
+      border: 2px solid $green-500;
     }
   }
   .footer-list {
     display: flex;
     ul {
-      padding-inline: 56px;
+      font-weight: 600;
       li:first-child {
         font-size: 20px;
-        padding-bottom: 40px;
+        padding-bottom: 35px;
       }
-
       li {
         padding-block: 8px;
+        padding-left: 40px;
         list-style: none;
         a {
           text-decoration: none;
@@ -63,4 +63,98 @@ section {
   background-color: #000;
   color: #fff;
   text-align: center;
+}
+
+// 小於1440
+@media screen and (max-width: 1440px) {
+  .footer-one {
+    padding: 120px;
+  }
+}
+
+// 小於1000
+@media screen and (max-width: 1000px) {
+  .footer-one {
+    flex-direction: column;
+    padding: 0 0 50px 0;
+    justify-content: center;
+    align-items: center;
+    .footer-logo-name {
+      margin-top: 58px;
+      font-size: 48px;
+      text-align: center;
+      height: 70px;
+      width: 580px;
+      border-bottom: 1px solid $green-500;
+    }
+    .footer-icon {
+      text-align: center;
+    }
+    .footer-list {
+      padding: 50px 0 0 0;
+      margin: 0;
+      ul {
+        padding: 0;
+
+        li {
+          padding: 8px 20px;
+        }
+      }
+    }
+  }
+}
+
+// 小於1000
+@media screen and (max-width: 550px) {
+  .footer-one {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .footer-logo-name {
+      margin-top: 40px;
+      font-size: 42px;
+      height: 60px;
+      width: 340px;
+    }
+    .footer-list {
+      padding: 40px 0 0 0;
+      margin-inline: 35px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas:
+        "user-area shopping-area  sharing-area"
+        "user-area shopping-area  other-area";
+      ul {
+        li:first-child {
+          font-size: 16px;
+          font-weight: 800;
+          padding-bottom: 10px;
+        }
+        li {
+          font-size: 14px;
+          padding: 5px 10px;
+        }
+      }
+    }
+    .user-area {
+      grid-area: user-area;
+    }
+
+    .shopping-area {
+      grid-area: shopping-area;
+    }
+
+    .sharing-area {
+      grid-area: sharing-area;
+    }
+
+    .other-area {
+      grid-area: other-area;
+    }
+  }
+
+  .footer-two {
+    font-size: 12px;
+    padding-inline: 50px;
+  }
 }
