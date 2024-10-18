@@ -203,6 +203,8 @@ section {
 }
 .footer-one .footer-icon {
   font-size: 28px;
+}
+.footer-one .footer-icon a {
   color: #90957a;
 }
 .footer-one .footer-icon i {
@@ -210,6 +212,11 @@ section {
   padding: 7px 5px;
   border-radius: 50%;
   border: 2px solid #90957a;
+}
+.footer-one .footer-icon i:hover {
+  color: #fff;
+  background-color: #90957a;
+  transition: ease 0.5s;
 }
 .footer-one .footer-list {
   display: flex;

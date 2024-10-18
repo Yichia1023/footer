@@ -28,12 +28,19 @@ section {
   }
   .footer-icon {
     font-size: 28px;
-    color: $green-500;
+    a {
+      color: $green-500;
+    }
     i {
       margin-right: 10px;
       padding: 7px 5px;
       border-radius: 50%;
       border: 2px solid $green-500;
+      &:hover {
+        color: #fff;
+        background-color: $green-500;
+        transition: ease 0.5s;
+      }
     }
   }
   .footer-list {
