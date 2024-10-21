@@ -181,6 +181,7 @@ body {
   box-sizing: border-box;
   height: 100vh;
   width: 100%;
+  font-family: "Noto Sans";
 }
 
 section {
@@ -221,10 +222,8 @@ section {
 .footer-one .footer-list {
   display: flex;
 }
-.footer-one .footer-list ul {
-  font-weight: 600;
-}
 .footer-one .footer-list ul li:first-child {
+  font-weight: 600;
   font-size: 20px;
   padding-bottom: 35px;
 }
@@ -296,12 +295,18 @@ section {
     padding: 40px 0 0 0;
     margin-inline: 35px;
     display: grid;
+    align-items: start;
+    grid-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "user-area shopping-area  sharing-area" "user-area shopping-area  other-area";
   }
+  .footer-one .footer-list ul {
+    margin: 0;
+    padding: 0;
+  }
   .footer-one .footer-list ul li:first-child {
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 600;
     padding-bottom: 10px;
   }
   .footer-one .footer-list ul li {
